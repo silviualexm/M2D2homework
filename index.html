@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>My favourite music albums</title>
+
+    <style>
+        /* EXERCISE 1
+              For all Albums we'd like to have a consistent style.
+              Create a class for:
+              - The album container
+              - The album cover
+              - The album title
+              - The album group / singer / dj
+              - The album genre
+              - The album duration
+              - etc
+           */
+
+           .container {
+               background-color: lightblue;
+           }
+           .card-title {
+               color: darkblue;
+           }
+           h5 {
+            color: darkslategrey;   
+            text-align: center; 
+           }
+           h6 {
+               color: darkslategray;
+           }
+           footer {
+               color: firebrick;
+               font-size: 20px;
+               padding: 30px;
+           }
+           .row {
+               background-color: rgb(64, 185, 8);
+           }
+      </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+     <!-- EXERCISE 2 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must be linked to every section in your page
+        -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" href="#">Short bio <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">The top albums</a>
+                <a class="nav-link" href="#">The worst album</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </div>
+            </div>
+        </nav>
+
+
+
+        <div class="jumbotron">
+            <h1 class="display-4">Hello !</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+
+    <!-- EXERCISE 3
+            Create a responsive section for your favourite albums.
+            In this section you should have:
+            - 4 albums per row when the screen is very large
+            - 3 albums per row when you are on a tablet (or a smaller window)
+            - 2 albums per row when you are on a small screen
+        -->
+        <div class="row m-0"><h5>Top</h5></div>
+        <div class="row m-0">
+            <div class="card col-6 col-md-4 col-lg-3" >
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card col-6 col-md-4 col-lg-3" >
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card col-6 col-md-4 col-lg-3" >
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card col-6 col-md-4 col-lg-3" >
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card col-6 col-md-4 col-lg-3" >
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card col-6 col-md-4 col-lg-3" >
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+
+    <!-- EXERCISE 4
+            Create a section for the album review.
+            Pick one of your fav albums, and create a section with:
+            - Cover
+            - Title
+            - Band
+            - Lenght
+            - Genre
+            - Tracklist
+            - ... And whatever you think it's interesting about it!
+        -->
+
+        <div class="row m-0"><h5>Album review</h5></div>
+        <div class="row m-0">
+            <div class="col-12 col-md-6"><img></div>
+            <div class="col-12 col-md-6">
+                <div class="row m-0">
+                    <div class="col-6"><h6>Title</h6></div>
+                    <div class="col-6">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="row m-0">
+                    <div class="col-6"><h6>Band</h6></div>
+                    <div class="col-6">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="row m-0">
+                    <div class="col-6"><h6>Lenght</h6></div>
+                    <div class="col-6">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="row m-0">
+                    <div class="col-6"><h6>Genre</h6></div>
+                    <div class="col-6">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="row m-0">
+                    <div class="col-6"><h6>Tracklist</h6></div>
+                    <div class="col-6">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="row m-0">
+                    <div class="col-6">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    <!-- EXERCISE 5
+            Worst album list! Find out the music you don't really like or you find overrated and list it
+            in this "hall of shame" chart!
+        -->
+        <div class="row m-0"><h5>Hall of shame</h5></div>
+        <div class="row m-0">
+
+
+            <div class="card col-6 col-md-4 col-lg-3" >
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+              <div class="card col-6 col-md-4 col-lg-3" >
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+
+        </div>
+
+    <!-- EXERCISE 6
+            Do you have any musician / band you admire or you are fan of?
+            This section is dedicated to him / her / them!
+            Feel free to experiment in this part of the page.
+        -->
+        <div class="row m-0"><h5>My favourite</h5></div>
+        <div class="row m-0">
+            <div class="col-12 col-md-6"><img></div>
+            <div class="col-12 col-md-6">
+                <div class="row m-0">
+                    <div class="col-6"><h6>Title</h6></div>
+                    <div class="col-6">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="row m-0">
+                    <div class="col-6"><h6>Band</h6></div>
+                    <div class="col-6">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="row m-0">
+                    <div class="col-6"><h6>Lenght</h6></div>
+                    <div class="col-6">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="row m-0">
+                    <div class="col-6"><h6>Genre</h6></div>
+                    <div class="col-6">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="row m-0">
+                    <div class="col-6"><h6>Tracklist</h6></div>
+                    <div class="col-6">
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="row m-0">
+                    <div class="col-6">
+                        <p></p>
+                    </div>
+                </div>
+        </div>
+
+    <!-- EXERCISE 7
+            Just covers!
+            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
+        -->
+
+    <!-- EXERCISE 8
+            Implement a footer with some information / social links
+        -->
+
+        <div class="row m-0">
+            <footer class="col">Copyright 2021</footer>
+        </div>
+
+    <!-- EXTRA:
+            EXERCISE 9
+            Create album details that are going to be toggled on and off by clicking on the album image
+        -->
+
+    <!-- EXERCISE 10
+            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible)
+        -->
+
+    <!--
+            EXERCISE 11
+            Add in the footer a field that counts, on page load, how many ALBUMS are on the page 
+        -->
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
